@@ -42,7 +42,7 @@ ul.social li {
 ul.social li a {
 	display: block;
 	margin: 0 auto;
-	background-image: url(./images/socialSprites.png);
+	background-image: url(/images/socialSprites.png);
 	//If you look at the socialSprites, you can it has a width of 270 with 6 icons.
 	//Taking 270/6, you get 45 pixels. You can see it, but there is a white version of the icons
 	//on the bottom, which is why the image is 90 pixels.
