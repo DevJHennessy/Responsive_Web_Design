@@ -158,6 +158,9 @@ main {
 			clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 			shape-outside: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 			margin: .5rem;
+			img {
+				width: 100%;
+			}
 		}
 
 		figure.ex6 {
