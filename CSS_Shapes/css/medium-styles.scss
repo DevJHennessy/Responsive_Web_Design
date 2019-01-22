@@ -1,0 +1,30 @@
+@import "variables.scss";
+/*-----HEADER SOCIAL ICONS-----*/
+header {
+  ul.social {
+    li {
+      a {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+
+} // end header
+
+/*  ------------- MAIN -------------  */
+main {
+
+  /*  ------------- COLUMN LAYOUT -------------  */
+
+  //Going from 1 through 12 to create a 12 column grid:
+  @for $i from 1 through 12 {
+  	$w: ($i / 12) * 100%;
+  	.medium-#{$i} {
+  		width: $w;
+  		float: left;
+  	 }
+  }
+
+
+} // end main
