@@ -1,0 +1,165 @@
+@import "variables.scss";
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* ------------- BODY ------------- */
+body {
+	font-family: $defaultFont;
+	font-size: 16px;
+	font-weight: $normalWeight;
+}
+
+
+
+
+/*  ------------- HEADER -------------  */
+header {
+	background-color: $primaryColor;
+	color: $secondaryColor;
+	padding:  1rem $gutter;
+	h1 {
+		font-size: 2rem;
+		font-weight: $normalWeight;
+	} //end h1 rules
+
+	h2 {
+		font-size: 1.12rem;
+    font-weight: $normalWeight;
+	} //end h2 rules
+
+
+/*-----HEADER SOCIAL ICONS-----*/
+
+	ul.social {
+		float: right;
+		li {
+			list-style-type: none;
+			float: left;
+			a {
+				font-size: 1.8rem;
+				padding-left: .5rem;
+				color: #fff;
+				&:hover {
+					color: $secondaryColor;
+				}
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+} // end header
+
+
+
+
+
+
+/*  ------------- NAV -------------  */
+nav {
+	@include gradient($secondaryColor, darken($secondaryColor, 20%));
+	border-bottom:1px solid rgba(0,0,0,0.3);
+	ul {
+		display: -ms-flexbox; //IE10 hack
+		display: flex;
+		li {
+			border-right: 1px solid rgba(0,0,0,0.3);
+			flex-basis: 25%;
+			li:last-child {
+				border-right: none;
+			} //end li:last-child
+			a {
+				display: block;
+				text-align: center;
+				font-weight: $boldWeight;
+				padding: .5rem 0;
+				color:$primaryColor;
+				text-decoration: none;
+				transition: background 0.75s ease, color 0.75s ease;
+				&:hover {
+					color: $secondaryColor;
+					background-color: $primaryColor;
+				} //end hover
+			} //end anchor
+		} //end li
+		li.active a {
+			background-color: darken( $secondaryColor, 10% );
+		} //end active
+	} //end ul
+
+
+} // end nav
+
+
+
+
+
+
+/*  ------------- MAIN -------------  */
+main {
+	max-width: 60rem;
+  min-height: 20rem;
+  padding: 1rem 2%;
+	h1 {
+		font-size: 2rem;
+		margin: 1.5rem 0 .5rem 0;
+		color: $primaryColor;
+	} // end h1
+	h2 {
+		font-size: 1.2rem;
+		margin: 1.1rem 0 .2rem 0;
+		color: lighten($primaryColor,20%);
+	} // end h2
+
+	div.parent {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 2%;
+		grid-row-gap: .5rem;
+		article {
+			//background-color: #eee;
+		} //end article
+		article:nth-child(1) {
+			grid-column: 1 / span 2;
+		} // end article first-child
+	} // end div.parent
+
+
+
+} // end main
+
+
+
+
+/*  ------------- FOOTER -------------  */
+footer {
+	width: 100%;
+	background-color: $primaryColor;
+	p {
+		text-align: center;
+		color: $secondaryColor;
+		padding: .75rem 0;
+		font-size: .9rem;
+	} // end p
+
+	p a {color: $secondaryColor;}
+} // end footer
+
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
