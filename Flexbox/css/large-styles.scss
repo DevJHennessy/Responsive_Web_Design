@@ -1,0 +1,40 @@
+@import "variables";
+/*  ------------- NAV -------------  */
+nav {
+	ul {
+		margin-left: 2%;
+		border-left: 1px solid rgba(0,0,0,0.3);
+		li {
+			-ms-flex: none;
+			flex-basis: auto;
+			li:last-child {
+				border-right: 1px solid rgba(0,0,0,0.3);
+			} //end li:last-child
+			a {
+				padding: .5rem 1rem;
+			} //end a
+		} //end li
+	} //end ul
+
+} // end nav
+
+
+/*  ------------- MAIN -------------  */
+main {
+	div.container1 {
+    div {
+      -ms-flex: 29.333%; //IE10 adds padding, so you have to account for this that was adding in small-default.
+      flex-basis: 33.333%;
+    }//end division
+  }
+
+	div.container2 {
+		figure {
+			-ms-flex: 21%;
+			flex-basis: 25%;
+		}//end figure
+	}//end container2
+
+
+
+} // end main

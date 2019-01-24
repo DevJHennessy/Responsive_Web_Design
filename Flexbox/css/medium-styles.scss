@@ -1,0 +1,32 @@
+@import "variables.scss";
+/*-----HEADER SOCIAL ICONS-----*/
+header {
+  ul.social {
+    li {
+      a {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+
+} // end header
+
+/*  ------------- MAIN -------------  */
+main {
+  div.container1 {
+    div {
+      -ms-flex: 46%; //ms adds padding, so you have to account for this that was adding in small-default.
+      flex-basis: 50%;
+    }//end division
+  }//end container1
+
+  div.container2 {
+    figure {
+      -ms-flex: 29.333%;
+      flex-basis: 33.333%;
+    }//end figure
+  }//end container2
+
+
+} // end main
