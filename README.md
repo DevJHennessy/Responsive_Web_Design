@@ -6,6 +6,8 @@
 
 <p>2) This example shows how to modify image shapes using CSS/SCSS with clip-path and shape-outside. View the <a href="https://htmlpreview.github.io/?https://github.com/DevJHennessy/Responsive_Web_Design/blob/master/CSS_Shapes/index.html">example</a>. A great resource for shaping these images can be found <a href="https://bennettfeely.com/clippy/">here</a>.</p>
 
-<p>3) </p>
+<p>3) Flexbox: </p>
 
-<p>4) </p>
+<p>4) Grid: </p>
+
+<p>5) Mobile Music Player Site Example. This combines many of the responsive web design practices employed in the earlier lessons. It consists of three pages: <a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/DevJHennessy/Responsive_Web_Design/master/MusicPlayer/index.html">Album</a>, <a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/DevJHennessy/Responsive_Web_Design/master/MusicPlayer/player.html">Player</a>, and <a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/DevJHennessy/Responsive_Web_Design/master/MusicPlayer/artist.html">Artist<a>. Take a look at these on phones, rotating the screens to see the responsive design of the elements.</p>
