@@ -1,9 +1,15 @@
-$primaryColor: #302b27;
-$secondaryColor:#baa256;
-$fontColor: #dce2eb;
+// main: style.scss
 
-$defaultFont: 'Lato', sans-serif;
-$normalWeight: 300;
+$primaryColor: #553285;
+$secondaryColor:#36175e;
+$lightGray: #aaa;
+$darkGray: #666;
+
+
+$textColor: $secondaryColor;
+
+$defaultFont: 'Source Sans Pro', sans-serif;
+$normalWeight: 400;
 $boldWeight: 700;
 
 $gutter: 2%;

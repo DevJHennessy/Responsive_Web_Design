@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Player</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,700|Parisienne|Source+Sans+Pro:400,700" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.min.css"/>
+  </head>
+
+  <body>
+    <div class="wrapper">
+
+  <!-- PAGE HEADER GOES HERE -->
+      <header>
+        <h1>Player</h1>
+      </header>
+
+  <!-- PAGE CONTENT GOES HERE -->
+      <main class="player">
+        <div class="photo">
+          <img src="./images/howl650.jpg" alt="cover"
+          sizes="(min-width: 29em) 50vw, 100vw"
+          srcset="./images/howl650.jpg 650w, ./images/howl750.jpg 750w, ./images/howl850.jpg 850w,
+          ./images/howl950.jpg 950w">
+        </div>
+
+        <div class="startTime">1:25</div>
+
+	      <div class="time"><input type="range" name="volume" min="0" max="100" value="30"></div>
+
+        <div class="endTime">-2:14</div>
+
+      	<div class="title">
+      		<span>Howling at the Moon</span>
+      		<span>Wolf Pack Seven</span>
+      	</div>
+
+	      <div class="previous"><span class="fas fa-angle-double-left"></span></div>
+	      <div class="play"><span class="fas fa-play"></span></div>
+	      <div class="next"><span class="fas fa-angle-double-right"></span></div>
+
+
+	     <div class="voldn"><span class="fas fa-volume-down"></span></div>
+       <div class="volume"><span><input type="range" name="volume" min="0" max="100"></span></div>
+       <div class="volup"><span class="fas fa-volume-up"></span></div>
+
+      </main>
+
+  <!-- PAGE NAVIGATION GOES HERE -->
+      <nav>
+        <div><a href="index.html"><i class="fas fa-music"></i></a></div>
+        <div><a href="artist.html"><i class="fas fa-user"></i></a></div>
+        <div><a href="song.html"><i class="fas fa-list"></i></a></div>
+        <div><a href="search.html"><i class="fas fa-search"></i></a></div>
+      </nav>
+
+    </div>
+    <!-- End wrapper -->
+
+  </body>
+</html>

@@ -1,0 +1,208 @@
+// main: style.scss
+@import "_variables.scss";
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+/*  apply a natural box layout model to all elements (* is a universal selector) */
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Body */
+body {
+	font-size: 16px;
+	font-family: $defaultFont;
+	font-weight: $normalWeight;
+	color: $textColor;
+	background-color: white;
+} // end body
+
+/* Wrapper */
+.wrapper {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}// end .wrapper
+
+/* Header */
+header {
+	background-color: $primaryColor;
+	color: white;
+	padding: .5rem $gutter;
+	font-size: 1.5rem;
+}// end header
+
+/* Navigation */
+nav {
+	background-color: white;
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+	border-top: 1px solid $darkGray;
+	display: flex;
+
+	div {
+		flex-basis: 25%;
+		text-align: center;
+		a {
+			display: block;
+			font-size: 1.7rem;
+			padding: .5rem 0;
+			color: $lightGray;
+		}// end anchor
+	}// end div
+	div.active a {
+		background-color: $primaryColor;
+		color: white;
+	}// end div.active anchor
+}// end navigation
+
+
+/* Main Section*/
+main {
+	padding-bottom: 2.75rem;
+}// end main
+
+
+/* Main Album */
+main.album {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: auto;
+
+	figure {
+		padding: .7rem 2vw;
+		img {
+			width: 100%;
+		}//end img
+		figcaption {
+			text-align: center;
+			padding: .2rem 0;
+		}// end figcaption
+	}//end figure
+}// end main.album
+
+
+/* Main Artist */
+main.artist {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-auto-rows: auto;
+
+	section {
+		display: grid;
+		grid-template-columns: 80px auto;
+		margin: .75rem 5%;
+
+		div img {
+			width: 100%; //forces image to fit inside the 80px wide column.
+			clip-path: circle(40px at center);
+			-webkit-clip-path: circle(40px at center);
+		}// end div img
+		div:nth-child(2) { // For the artist's name
+			align-self: center; // top to bottom
+			padding: 5%;
+		}// end div:nth-child(2)
+	}// end section
+}// end artist
+
+
+/* Main Album */
+main.player {
+	display: grid;
+	grid-template-columns: 50px auto 50px;
+	grid-auto-rows: auto;
+	grid-template-areas:
+	"photo photo photo"
+	"time time time"
+	"startTime empty endTime"
+	"title title title"
+	"prev play next"
+	"dn vol up";
+	margin-top: 1.5rem;
+
+	div.photo {
+		grid-area: photo;
+		img {
+			width: 84%; //width is set to 84 because margins at 8% right and 8% left (16 total).
+			margin: 0 0 .5rem 8%; // Having 8% on the left automatically makes 8% on the right, so you can at 0.
+			border-radius: 20px;
+		}// end img
+	}// end div.photo
+
+	div.time {
+		grid-area: time;
+		justify-self: center;
+		width: 84%;
+		input {
+			width: 100%;
+		}// end input
+	}// end div.time
+
+	div.startTime {
+		grid-area: startTime;
+		text-align: right;
+	}
+
+	div.endTime {
+		grid-area: endTime;
+	}
+
+	div.title {
+		grid-area: title;
+		span {
+			display: block;
+			text-align: center;
+		}// end span
+		span:nth-child(1) {
+			font-size: 1.5rem;
+			padding: 1rem 0 .3rem 0;
+		}
+		span:nth-child(2) {
+			font-size: 1.2rem;
+			padding-bottom: 1rem;
+		}
+	}//end div.title
+
+	div.previous {
+		grid-area: prev;
+		justify-self: end;
+		font-size: 1.5rem;
+	}//end div.previous
+
+	div.play {
+		grid-area: play;
+		justify-self: center;
+		font-size: 1.5rem;
+		padding-bottom: 1rem;
+	}// end div.play
+
+	div.next {
+		grid-area: next;
+		justify-self: start;
+		font-size: 1.5rem;
+	}// end div.next
+
+	div.voldn {
+		grid-area: dn;
+		justify-self: center;
+	}//end div.voldn
+
+	div.volume {
+		grid-area: vol;
+		input {
+			width: 100%;
+		}// end input
+	}// end div.volume
+
+	div.volup {
+		grid-area: up;
+		justify-self: center;
+	}// end div.volup
+
+}// end main.player

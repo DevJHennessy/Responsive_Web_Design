@@ -1,14 +1,15 @@
-@import "reset.scss";
-@import "variables.scss";
-@import "small-default.scss";
+@import "_reset.scss";
+@import "_variables.scss";
+@import "_small-default.scss";
 
-
-//35em is also 560px (if basefont is 16px)
-@media only screen and (min-width: 35em) {
-  @import "medium-styles.scss";
+//464px is a safe breakpoint for phones between the landscape and portrait orientation.
+//29em is also 464px (if basefont is 16px)
+@media only screen and (min-width: 29em) {
+  @import "_medium-styles.scss";
 }
 
+//This music player is not built for large screens
 //64em is also 1028px (if basefont is 16px)
-@media only screen and (min-width: 64em) {
-  @import "large-styles.scss";
-}
+// @media only screen and (min-width: 64em) {
+//   @import "large-styles.scss";
+// }

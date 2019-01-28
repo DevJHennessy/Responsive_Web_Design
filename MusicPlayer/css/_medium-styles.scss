@@ -1,0 +1,23 @@
+// main: style.scss
+@import "_variables.scss";
+/* Main Album */
+main.album {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}// end main.album
+
+
+/* Main Artist */
+main.artist {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Main Artist */
+main.player {
+  grid-template-columns: 50% 50px auto 50px;
+  grid-auto-rows: auto;
+  grid-template-areas:
+  "photo startTime time endTime"
+  "photo title title title"
+  "photo prev play next"
+  "photo dn vol up";
+}
