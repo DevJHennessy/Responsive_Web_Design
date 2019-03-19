@@ -1,4 +1,4 @@
-<h1>Responsive Web Design Layouts</h1>
+<h1>Responsive Web Design: Mobile-first Layouts</h1>
 
 <p>In this repository there are few examples of responsive web design layouts and one example of how to use SCSS/CSS to modify image shapes and wrap text around those images. All examples use SASS as the preprocessor, with all but the main "style.scss" set up as partials. The material comes from completing the PluralSight Course: <a href="https://www.pluralsight.com/courses/responsive-web-design-columns-flexbox-grids">Hands-on Responsive Web Design 3: Columns, Flexbox, and Grids</a>. The first example is a website made with a twelve column grid, the second shows how to modify image shapes, the third uses flexbox, the fourth examples uses the css grid, and the last one shows a combination of layouts to make a responsive mobile music player.</p>
 
